@@ -1,0 +1,83 @@
+:root {
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+  --blue: hsl(248, 32%, 49%);
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --white: hsla(0, 0%, 100%, 1);
+  --desktop: 1440px;
+  --mobile: 375px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--red);
+  background-image: url(./images/bg-intro-desktop.png);
+  margin: 0 auto;
+}
+
+.wrap {
+  width: var();
+  margin: auto auto;
+
+  display: flex;
+}
+h1,
+p {
+  color: var(--white);
+}
+
+#trialBtn {
+  background: #5e54a4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  height: 60px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+form {
+  background: var(--white);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  place-items: center;
+}
+
+form input {
+  height: 56px;
+  width: 460px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #5e54a4;
+  margin-bottom: 20px;
+}
+#claimBtn {
+  height: 56px;
+  width: 460px;
+  left: 40px;
+  top: 40px;
+  border-radius: 5px;
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+button {
+  width: 100%;
+}
+
+#formText {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--grayishBlue);
+}
+#formText a {
+  color: var(--red);
+}
