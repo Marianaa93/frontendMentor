@@ -21,37 +21,50 @@ body {
   background-color: var(--red);
   background-image: url(./images/bg-intro-desktop.png);
   margin: 0 auto;
-  width: var(--desktop);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .wrap {
-  margin-top: 121px;
+  max-width: var(--desktop);
+  margin: auto;
+
+  height: 100vh;
+  
   display: flex;
-  gap: 45px;
+  align-items: center;
+  justify-content: center;  
+  gap: 40px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #informations__text {
+    text-align: center;
+  }
 }
 
 h1 {
   font-size: 50px;
-  width: 525px;
 }
 h1,
 p {
   color: var(--white);
 }
 
-#informations_section {
-  width: 525px;
+.informations_section {
+  max-width: 550px;
   border-radius: 0px;
-  padding-top: 109px;
+  word-break: break-word;
 }
 
 #informations__text {
   font-weight: 500;
-  width: 525px;
   border-radius: 0px;
 }
 
@@ -71,12 +84,13 @@ form {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 form input {
-  height: 56px;
-  width: 460px;
+  padding: 16px;
+  width: 100%;
   border-radius: 5px;
   background: #ffffff;
   border: 1px solid #5e54a4;
@@ -90,10 +104,8 @@ input::placeholder {
 }
 
 #claimBtn {
-  height: 56px;
   width: 460px;
-  left: 40px;
-  top: 40px;
+  padding: 16px;
   border-radius: 5px;
   background: #38cc8b;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
@@ -110,18 +122,13 @@ button {
   font-size: 11px;
   font-weight: 500;
   color: var(--grayishBlue);
-  height: 78px;
-  width: 525px;
-  left: 0px;
-  top: 142px;
-  text-align-last: center;
+  text-align: center;
 }
 #formText a {
   color: var(--red);
 }
 .form__field {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .error {
@@ -132,6 +139,7 @@ button {
   font-weight: 500;
   line-height: 17px;
   letter-spacing: 0px;
+  display: block;
 }
 
 .form__field input:focus {
