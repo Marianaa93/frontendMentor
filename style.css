@@ -65,7 +65,8 @@ form {
   align-items: center;
 }
 
-form input {
+form input,
+input:valid {
   border-radius: 5px;
   border: 1px solid #dedede;
   width: 100%;
@@ -138,17 +139,11 @@ input::placeholder {
   border: 1px solid #5e54a4;
 }
 
-.form__field.error input {
+input:invalid {
   border-color: var(--red);
-}
-form input.error {
   background-image: url(./images/icon-error.svg);
   background-repeat: no-repeat;
-  background-position: right;
-}
-
-.form__field.success input {
-  border-color: var(--success-color);
+  background-position: 95%;
 }
 
 .form__field small {
